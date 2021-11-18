@@ -232,7 +232,7 @@ curl --location --request GET 'https://study.jszkk.com/api/open/seek?q=计算机
 | 名称 | 类型 | 必填 | 描述 |
 | --- | --- | --- | --- |
 | Content-Type | string | 是 | **固定值：**"application/json; charset=utf-8" |
-| Authorization | string | 是 | **固定值：**"application/json; charset=utf-8" |
+| Authorization | string | 是 | API Token，参考文档 [API 调用流程](#api-调用流程) 创建 API Token<br> **示例值：**"xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoX…" |
 
 **查询参数**
 
