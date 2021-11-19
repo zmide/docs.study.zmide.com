@@ -127,9 +127,11 @@ $ curl -X POST 'https://study.jszkk.com/api/open/add'
 数据示例
 
 ```
-{
-    "answer": false
-}
+[
+    {
+        "answer": false
+    }
+]
 ```
 
 #### 选择题（包括单选题和多选题）
@@ -244,7 +246,7 @@ curl --location --request GET 'https://study.jszkk.com/api/open/seek?q=计算机
 | type | int | 否 | 题目类型（-1 无类型【默认】，0 单选题，1 多选题，3 判断题） |
 | content | string | 是 | 题目内容<br>**示例值：**"在 CPU 中配置高速缓冲器（Cache）是为了解决（ ）。" |
 | answer | string | 否 | 题目答案，题目答案和题目选项必须提交其中一个<br>**示例值：**"CPU 与内存储器之间速度不匹配的问题" |
-| options | string \| array | 否 | 题目选项，题目答案和题目选项必须提交其中一个，JSON 数据格式请参考 [题目选项数据格式](#题目选项数据格式) <br>**示例值( JSON 转义字符串类型 )：**`[{\"name\":\"A\",\"content\":\"CPU与内存储器之间速度不匹配的问题\",\"isanswer\":true},{\"name\":\"B\",\"content\":\"内存储器的问题\",\"isanswer\":false},{\"name\":\"C\",\"content\":\"CPU的问题\",\"isanswer\":false},{\"name\":\"D\",\"content\":\"玩游戏的问题\",\"isanswer\":false}]` <br>**示例值( 数组类型 )：**```[{"name":"A","content":"CPU 与内存储器之间速度不匹配的问题","isanswer":true},{"name":"B","content":"内存储器的问题","isanswer":false},{"name":"C","content":"CPU 的问题","isanswer":false},{"name":"D","content":"玩游戏的问题","isanswer":false}]```|
+| options | string \| array | 否 | 题目选项，题目答案和题目选项必须提交其中一个，JSON 数据格式请参考 [题目选项数据格式](#题目选项数据格式) <br>**示例值( JSON 转义字符串类型 )：**`[{\"name\":\"A\",\"content\":\"CPU与内存储器之间速度不匹配的问题\",\"isanswer\":true},{\"name\":\"B\",\"content\":\"内存储器的问题\",\"isanswer\":false},{\"name\":\"C\",\"content\":\"CPU的问题\",\"isanswer\":false},{\"name\":\"D\",\"content\":\"玩游戏的问题\",\"isanswer\":false}]` <br>**示例值( 数组类型 )：**`[{"name":"A","content":"CPU 与内存储器之间速度不匹配的问题","isanswer":true},{"name":"B","content":"内存储器的问题","isanswer":false},{"name":"C","content":"CPU 的问题","isanswer":false},{"name":"D","content":"玩游戏的问题","isanswer":false}]`|
 
 **请求体示例**
 
@@ -319,7 +321,7 @@ curl --location --request GET 'https://study.jszkk.com/api/open/add' \
 
 ## 鸣谢
 
-> **感谢所有支持我们的小伙伴，以及来自 [@Bilibili](https://www.bilibili.com/video/BV1Jq4y1u7Wm) 给观看点赞投币关注的各位 *产品经理* 们**
+> **感谢所有支持我们的小伙伴，以及来自 [@Bilibili](https://www.bilibili.com/video/BV1Jq4y1u7Wm) 给观看点赞投币关注的各位 _产品经理_ 们**
 >
 > 下面列举项目用到的部分主要开源项目，排名不分先后，还有很多没有在列表的项目这里对所有的开源项目的作者以及维护者表示由衷感谢，谢谢你们的辛劳和无私奉献。
 >
