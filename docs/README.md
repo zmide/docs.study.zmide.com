@@ -22,7 +22,7 @@
 
 > 注: 全能搜题全部开源项目遵从 [MIT 许可协议开源](https://github.com/zmide/study.zmide.com/blob/main/LICENSE) ，任何人可以将其任意代码用于任何地方
 >
-> 免责声明: 受项目公开性质，作者以贡献者们不能保证数据来源是否合规，任何人都能提交搜索和使用系统的全部数据，在您使用该项目的任何服务时必须遵守相关国家法律法规并且本系统的全部文字在[知识共享 署名-相同方式共享 3.0 协议](https://creativecommons.org/licenses/by-sa/3.0/cn/deed.zh)之条款下提供，附加条款亦可能应用。（请参阅[使用条款](https://creativecommons.org/licenses/by-sa/3.0/cn/deed.zh)）
+> 免责声明: 受项目公开性质，作者与贡献者们不能保证数据来源是否合规，任何人都能提交搜索和使用系统的全部数据，在您使用该项目的任何服务时必须遵守相关国家法律法规并且本系统的全部文字在[知识共享 署名-相同方式共享 3.0 协议](https://creativecommons.org/licenses/by-sa/3.0/cn/deed.zh)之条款下提供，附加条款亦可能应用。（请参阅[使用条款](https://creativecommons.org/licenses/by-sa/3.0/cn/deed.zh)）
 
 ## 准备对接
 
@@ -226,7 +226,7 @@ curl --location --request GET 'https://study.jszkk.com/api/open/seek?q=计算机
 | 基本 ||
 | --- | --- |
 | HTTP URL | https://study.jszkk.com/api/open/add |
-| HTTP Method | GET |
+| HTTP Method | POST |
 
 **请求头**
 | 名称 | 类型 | 必填 | 描述 |
@@ -244,7 +244,7 @@ curl --location --request GET 'https://study.jszkk.com/api/open/seek?q=计算机
 | type | int | 否 | 题目类型（-1 无类型【默认】，0 单选题，1 多选题，3 判断题） |
 | content | string | 是 | 题目内容<br>**示例值：**"在 CPU 中配置高速缓冲器（Cache）是为了解决（ ）。" |
 | answer | string | 否 | 题目答案，题目答案和题目选项必须提交其中一个<br>**示例值：**"CPU 与内存储器之间速度不匹配的问题" |
-| options | json | 否 | 题目选项，题目答案和题目选项必须提交其中一个，JSON 数据格式请参考 [题目选项数据格式](#题目选项数据格式)<br>**示例值：**"[{\"name\":\"A\",\"content\":\"CPU 与内存储器之间速度不匹配的问题\",\"isanswer\":true},{\"name\":\"B\",\"content\":\"内存储器的问题\",\"isanswer\":false},{\"name\":\"C\",\"content\":\"CPU 的问题\",\"isanswer\":false},{\"name\":\"D\",\"content\":\"玩游戏的问题\",\"isanswer\":false}]" |
+| options | string \| array | 否 | 题目选项，题目答案和题目选项必须提交其中一个，JSON 数据格式请参考 [题目选项数据格式](#题目选项数据格式) <br>**示例值( JSON 转义字符串类型 )：**`[{\"name\":\"A\",\"content\":\"CPU与内存储器之间速度不匹配的问题\",\"isanswer\":true},{\"name\":\"B\",\"content\":\"内存储器的问题\",\"isanswer\":false},{\"name\":\"C\",\"content\":\"CPU的问题\",\"isanswer\":false},{\"name\":\"D\",\"content\":\"玩游戏的问题\",\"isanswer\":false}]` <br>**示例值( 数组类型 )：**```[{"name":"A","content":"CPU 与内存储器之间速度不匹配的问题","isanswer":true},{"name":"B","content":"内存储器的问题","isanswer":false},{"name":"C","content":"CPU 的问题","isanswer":false},{"name":"D","content":"玩游戏的问题","isanswer":false}]```|
 
 **请求体示例**
 
