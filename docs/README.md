@@ -1,7 +1,7 @@
 <!--
  * @Author: Bin
  * @Date: 2021-11-18
- * @FilePath: /docsso.jszkk.com/docs/README.md
+ * @FilePath: /docs.study.zmide.com/docs/README.md
 -->
 
 # 介绍
@@ -304,6 +304,10 @@ curl --location --request GET 'https://study.jszkk.com/api/open/add' \
 
 > 服务端代码正在整理，准备开源…
 
+## 其他资源
+
+下载题目批量导入模版文件: <https://docsso.jszkk.com/import_template.xlsx>
+
 ## 支持我们
 
 > 您可以通过以下方式对我们进行支持：
@@ -313,11 +317,9 @@ curl --location --request GET 'https://study.jszkk.com/api/open/add' \
 > -   **提出 ISSUE**
 > -   **加入我们**
 > -   **提供服务器或者其他资源**
-> -   **通过捐赠**
 >
 > 我们承诺，所有捐赠将用于项目的服务器或其他资源购买支出，项目正常维护支出。
 
-![docs_readme_005](../assets/docs_readme_005.jpg)
 
 ## 鸣谢
 
